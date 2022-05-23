@@ -10,7 +10,10 @@ diff = day2 - day1
 print(diff)
 
 print(diff.days)
+<<<<<<< HEAD
 
 
 day2.weekday()
 day2.isoweekday()
+=======
+>>>>>>> 345d865601af291843eda5f92621cbbad000efa1
