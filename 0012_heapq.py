@@ -13,8 +13,10 @@ data = [
 # for score in data:
 #     heapq.heappush(h, score)
 
-heapq.heapify(data)
+# heapq.heapify(data)
 
-for i in range(3):
-    # print(heapq.heappop(h))
-    print(heapq.heappop(data))
+# for i in range(3):
+#     # print(heapq.heappop(h))
+#     print(heapq.heappop(data))
+    
+print(heapq.nsmallest(3, data))
