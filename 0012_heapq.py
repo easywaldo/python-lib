@@ -9,9 +9,12 @@ data = [
     (13.74, "delta")
 ]
 
-h = []
-for score in data:
-    heapq.heappush(h, score)
+# h = []
+# for score in data:
+#     heapq.heappush(h, score)
+
+heapq.heapify(data)
 
 for i in range(3):
-    print(heapq.heappop(h))
+    # print(heapq.heappop(h))
+    print(heapq.heappop(data))
