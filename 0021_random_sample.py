@@ -7,3 +7,7 @@ while len(result) < 6:
         result.append(num)
 
 print(result)
+
+target = [1,2,3,4,5,6,7,8,9,10]
+random.shuffle(target)
+print(target)
