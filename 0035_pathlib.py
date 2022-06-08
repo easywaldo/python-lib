@@ -8,8 +8,15 @@ for file_path in glob.glob('%s/*.txt' % os.getcwd()):
     new_path = os.path.join(parent, 'archive', file_name)
     shutil.move(file_path, new_path)
     
-import pathlib
+import pathlib, collections
 
 for p in pathlib.Path.cwd().glob('%.txt'):
     new_p = p.parent.joinpath('archive', p.name)
     p.replace(new_p)
+    
+result = collections.Counter([p.suffix for p in pathlib.Path.cwd().iterdir()])
+print(result)
+
+
+
+
